@@ -1,0 +1,184 @@
+$lightYellow: rgba(255, 248, 242, 1);
+$orange: rgba(255, 107, 0, 1);
+
+.contentContainer {
+  margin-top: 5%;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
+  background-color: #fff;
+  font-family: "Work Sans";
+}
+
+//////NAV///
+
+.navSection {
+  border-bottom: $orange 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  align-items: center;
+}
+.navSection h2 {
+  font-size: 20px;
+  color: #000;
+}
+
+.navSection .amountAvialable {
+  color: $orange;
+}
+.navSection .logo {
+  background-color: rgb(217, 217, 217);
+  border-radius: 16px;
+  padding: 10px;
+  align-items: center;
+  // width: fit-content;
+}
+
+.amountAvailable {
+  color: $orange;
+}
+
+.transactionDetails {
+  display: grid;
+  grid-template-columns: 0.75fr 3.25fr;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.paymentTypeSection {
+  display: grid;
+  gap: 1rem;
+
+  button {
+    cursor: pointer;
+    background-color: $lightYellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.25rem;
+    gap: 0.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+
+    i {
+      font-size: 1.25rem;
+    }
+
+    span {
+      font-size: 0.75rem;
+    }
+
+    &.activePaymentType {
+      background-color: $orange;
+      color: white;
+    }
+  }
+}
+
+.cardDetailSection {
+  background-color: $lightYellow;
+  padding: 30px;
+}
+
+.cardDetailSection {
+  display: block;
+  padding: 30px;
+  border-radius: 22px;
+  background-color: rgb(255, 248, 242);
+  justify-content: center;
+  align-items: center;
+}
+
+.cardDetailHeaderSection {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  input {
+    width: 100%;
+    height: 50px;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    padding: 0 10px;
+    outline: 1px solid #0000005e;
+    border: none;
+
+    &:focus {
+      outline-color: $orange;
+    }
+  }
+
+  .userName {
+    display: grid;
+    gap: 5px;
+    font-size: 20px;
+  }
+
+  .cardNumber {
+    display: grid;
+    gap: 5px;
+    font-size: 20px;
+  }
+
+  .cvvAndExpirySection {
+    display: grid;
+    gap: 5px;
+  }
+
+  .cvvAndExpirySection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .cvv {
+    display: grid;
+    gap: 5px;
+  }
+
+  .expiry {
+    display: grid;
+    gap: 5px;
+  }
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 15px;
+
+  button {
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 400 !important;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .cancelButton {
+    button {
+      background-color: #000;
+    }
+  }
+  .paymentButton {
+    button {
+      background-color: $orange;
+    }
+  }
+}
+
+.brandingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
